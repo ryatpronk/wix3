@@ -81,117 +81,193 @@ Heat supports the following command line parameters:
       <p><b>Switch</b></p>
     </td>
     <td valign="top">
+      <p><b>Required</b></p>
+    </td>
+    <td valign="top">
+      <p><b>Default</b></p>
+    </td>
+    <td valign="top">
       <p><b>Meaning</b></p>
     </td>
   </tr>
+    
   <tr>
     <td valign="top">
       <p>-ag</p>
     </td>
     <td>
+    </td>
+    <td>
+    </td>
+    <td>
       <p>Auto generate component guids at compile time, e.g. set Guid=&quot;*&quot;.</p>
     </td>
   </tr>
+  
   <tr>
     <td valign="top" style="white-space: nowrap">
       <p>-cg &lt;ComponentGroupName&gt;</p>
     </td>
     <td>
+    </td>
+    <td>
+    </td>
+    <td>
       <p>Component group name (cannot contain spaces e.g -cg MyComponentGroup).</p>
     </td>
   </tr>
+  
   <tr>
     <td valign="top">
       <p>-configuration</p>
     </td>
     <td>
+    </td>
+    <td>
+    </td>
+    <td>
       <p>Configuration to set when harvesting the project.</p>
     </td>
   </tr>
+  
   <tr>
     <td valign="top">
       <p>-directoryid</p>
     </td>
     <td>
+    </td>
+    <td>
+    </td>
+    <td>
       <p>Overridden directory id for generated directory elements.</p>
     </td>
   </tr>
+  
   <tr>
     <td valign="top">
       <p>-dr &lt;DirectoryName&gt;</p>
     </td>
     <td>
+    </td>
+    <td>
+    </td>
+    <td>
       <p>Directory reference to root directories (cannot contains spaces e.g. -dr MyAppDirRef).</p>
     </td>
   </tr>
+  
   <tr>
     <td valign="top">
       <p>-ext &lt;extension&gt;</p>
     </td>
     <td>
+    </td>
+    <td>
+    </td>
+    <td>
       <p>Extension assembly or &quot;class, assembly&quot;.</p>
     </td>
   </tr>
+  
   <tr>
     <td valign="top">
       <p>-generate</p>
+    </td>
+    <td>
+    </td>
+    <td>
     </td>
     <td>
       <p>Specify what elements to generate, one of: components, container, payloadgroup,
           layout (default is components).</p>
     </td>
   </tr>
+  
   <tr>
     <td valign="top">
       <p>-gg</p>
     </td>
     <td>
+    </td>
+    <td>
+    </td>
+    <td>
       <p>Generate guids now. All components are given a guid when heat is run.</p>
     </td>
   </tr>
+  
   <tr>
     <td valign="top">
       <p>-g1</p>
     </td>
     <td>
+    </td>
+    <td>
+    </td>
+    <td>
       <p>Generate component guids without curly braces.</p>
     </td>
   </tr>
+  
   <tr>
     <td valign="top">
       <p>-ke</p>
     </td>
     <td>
+    </td>
+    <td>
+    </td>
+    <td>
       <p>Keep empty directories.</p>
     </td>
   </tr>
+  
   <tr>
     <td valign="top">
       <p>-nologo</p>
     </td>
     <td>
+    </td>
+    <td>
+    </td>
+    <td>
       <p>Skip printing heat logo information.</p>
     </td>
   </tr>
+  
   <tr>
     <td valign="top">
       <p>-out</p>
     </td>
     <td>
+    </td>
+    <td>
+    </td>
+    <td>
       <p>Specify output file (default: write to current directory).</p>
     </td>
   </tr>
+  
   <tr>
     <td valign="top">
       <p>-platform</p>
     </td>
     <td>
+    </td>
+    <td>
+    </td>
+    <td>
       <p>Platform to set when harvesting the project.</p>
     </td>
   </tr>
+  
   <tr>
     <td valign="top">
       <p>-pog:&lt;group&gt;</p>
+    </td>
+    <td>
+    </td>
+    <td>
     </td>
     <td>
       <p>Specify output group of Visual Studio project, one of: Binaries, Symbols, Documents,
@@ -207,57 +283,92 @@ Heat supports the following command line parameters:
       <p>This option may be repeated for multiple output groups; e.g. -pog:Binaries -pog:Content.</p>
     </td>
   </tr>
+  
   <tr>
     <td valign="top">
       <p>-projectname</p>
     </td>
     <td>
+    </td>
+    <td>
+    </td>
+    <td>
       <p>Overridden project name to use in variables.</p>
     </td>
   </tr>
+  
   <tr>
     <td valign="top">
       <p>-scom</p>
     </td>
     <td>
+    </td>
+    <td>
+    </td>
+    <td>
       <p>Suppress COM elements.</p>
     </td>
   </tr>
+  
   <tr>
     <td valign="top">
       <p>-sfrag</p>
     </td>
     <td>
+    </td>
+    <td>
+    </td>
+    <td>
       <p>Suppress generation of fragments for directories and components.</p>
     </td>
   </tr>
+  
   <tr>
     <td valign="top">
       <p>-srd</p>
     </td>
     <td>
+    </td>
+    <td>
+    </td>
+    <td>
       <p>Suppress harvesting the root directory as an element.</p>
     </td>
   </tr>
+  
   <tr>
     <td valign="top">
       <p>-sreg</p>
     </td>
     <td>
+    </td>
+    <td>
+    </td>
+    <td>
       <p>Suppress registry harvesting.</p>
     </td>
   </tr>
+  
   <tr>
     <td valign="top">
       <p>-suid</p>
     </td>
     <td>
+    </td>
+    <td>
+    </td>
+    <td>
       <p>Suppress unique identifiers for files, components, &amp; directories.</p>
     </td>
   </tr>
+  
   <tr>
     <td valign="top">
       <p>-svb6</p>
+    </td>
+    <td>
+    </td>
+    <td>
     </td>
     <td>
       <p>Suppress VB6 COM registration entries. When registering a COM component created
@@ -270,58 +381,93 @@ Heat supports the following command line parameters:
           - Any Interfaces that reference these two type libraries</p>
     </td>
   </tr>
+  
   <tr>
     <td valign="top">
       <p>-sw&lt;N&gt;</p>
     </td>
     <td>
+    </td>
+    <td>
+    </td>
+    <td>
       <p>Suppress all warnings or a specific message ID, e.g. -sw1011 -sw1012.</p>
     </td>
   </tr>
+  
   <tr>
     <td valign="top">
       <p>-swall</p>
     </td>
     <td>
+    </td>
+    <td>
+    </td>
+    <td>
       <p>Suppress all warnings (<em>deprecated</em>).</p>
     </td>
   </tr>
+  
   <tr>
     <td valign="top">
       <p>-t &lt;xsl&gt;</p>
     </td>
     <td>
+    </td>
+    <td>
+    </td>
+    <td>
       <p>Transform harvested output with XSL file.</p>
     </td>
   </tr>
+  
   <tr>
     <td valign="top">
       <p>-indent &lt;n&gt;</p>
     </td>
     <td>
+    </td>
+    <td>
+    </td>
+    <td>
       <p>Indentation multiple (overrides default of 4).</p>
     </td>
   </tr>
+  
   <tr>
     <td valign="top" style="white-space: nowrap">
       <p>-template &lt;template&gt;</p>
+    </td>
+    <td>
+    </td>
+    <td>
     </td>
     <td>
       <p>Use template, one of: fragment, module, product.<br />
           Default: fragment.</p>
     </td>
   </tr>
+  
   <tr>
     <td valign="top">
       <p>-v</p>
     </td>
     <td>
+    </td>
+    <td>
+    </td>
+    <td>
       <p>Verbose output.</p>
     </td>
   </tr>
+  
   <tr>
     <td valign="top">
       <p>-var &lt;VariableName&gt;</p>
+    </td>
+    <td>
+    </td>
+    <td>
     </td>
     <td>
       <p>Substitute File/@Source=&quot;SourceDir&quot; with a preprocessor or a wix variable
@@ -329,36 +475,56 @@ Heat supports the following command line parameters:
           and -var wix.MySource will become File/@Source=&quot;!(wix.MySource)\myfile.txt&quot;.</p>
     </td>
   </tr>
+  
   <tr>
     <td valign="top">
       <p>-wixvar</p>
     </td>
     <td>
+    </td>
+    <td>
+    </td>
+    <td>
       <p>Generate binder variables instead of preprocessor variables.</p>
     </td>
   </tr>
+  
   <tr>
     <td valign="top">
       <p>-wx[N]</p>
     </td>
     <td>
+    </td>
+    <td>
+    </td>
+    <td>
       <p>Treat all warnings or a specific message ID as an error. e.g. -wx1011 -wx1012.</p>
     </td>
   </tr>
+  
   <tr>
     <td valign="top">
       <p>-wxall</p>
     </td>
     <td>
+    </td>
+    <td>
+    </td>
+    <td>
       <p>Treat all warnings as errors (<em>deprecated</em>).</p>
     </td>
   </tr>
+  
   <tr>
     <td valign="top">
       <p>-? | -help</p>
     </td>
     <td>
-      <p>&nbsp;Display heat help information.</p>
+    </td>
+    <td>
+    </td>
+    <td>
+      <p>Display heat help information.</p>
     </td>
   </tr>
 </table>
